@@ -1,4 +1,4 @@
-/* C1 ES CALIFICACIÓN*/
+ /* C1 ES CALIFICACIÓN*/
 let c1 = 5;
 let c2 = 5;
 let c3 = 5;
