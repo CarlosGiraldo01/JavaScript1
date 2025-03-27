@@ -1,9 +1,11 @@
 document.getElementById('calcular').addEventListener('click', function() {
-let op1 = parseInt(prompt("Ingrese un número"));
-let operador = prompt("Ingrese un operador (+, -, *, /, **, %)").trim();
-let op2 = parseInt(prompt("Ingrese otro número"));
+    event.preventDefault();
 
-let respuesta = "";
+
+let op1 = parseInt(document.getElementById("op1").value);
+let operador = document.getElementById("operador").value;
+let op2 = parseInt(document.getElementById("op2").value);
+let respuesta;
 
 if (operador === "+") {
     respuesta = op1 + op2;
@@ -24,5 +26,5 @@ if (operador === "+") {
 } else {
     respuesta = "ERROR: Operador No Válido!"; 
 }
-document.getElementById('respuesta').textContent = 'Resultado: ' + respuesta;
+document.getElementById('respuesta').innerText = 'Resultado: ' + respuesta;
 });
